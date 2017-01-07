@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cores</title>
+        <style>
+            body{
+                font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Geneva, Tahoma, sans-serif;
+            }            
+            figure{
+                position: relative;
+            }
+            img{
+                display: block;
+            }
+            figcaption{
+                bottom: 5px;
+                margin: 0 5px;
+                padding: 5px;
+                position: absolute;
+                width: 300px;
+                background-color: #000;                
+                background-color: rgba(0,0,0,0.5);
+                color: #fff;                
+            }
+            ul{
+                height: 35px;
+                list-style: none;
+                padding: 0;
+                width: 210px;
+                background-color: #ccc;
+                color: white;
+                border: 1px solid rgba(0,0,0,0.3);
+            }
+            li{
+                float: left;
+                line-height: 35px;
+                font-size: 0.9em;
+                width: 50px;
+                text-align: center;
+                border-left: 1px solid rgba(255,255,255,0.3);
+                border-right: 1px solid rgba(0,0,0,0.3);
+            }
+            li:first-child{
+                border-left: none;
+            }
+            li:last-child{
+                border-right: none;
+            }
+            div{
+                font-weight: bold;
+                height: 50px;
+                line-height: 25px;
+                margin-bottom: 10px;
+                padding: 5px;
+                text-align: center;
+                width: 220px;
+            }
+            .blue{
+                background: linear-gradient(to top, #4377FA, #0537B7);
+            }
+            .reverse-blue{
+                background: linear-gradient(to top, #0537b7, #4377fa);
+            }
+            .omg-pink{
+                background: linear-gradient(to top right, #fc0050, #ff79a3);
+            }
+            .stops{
+                background: linear-gradient(to top, #f5b951 48%, #f2a31c 56%);
+            }
+            .sol{
+                background: linear-gradient(red, yellow);
+            }
+        </style>
+    </head>
+    <body>
+        <figure>
+            <img src="/images/sf.jpg" alt="A Golden Gate.">
+            <figcaption>
+                San Francisco, Califórnia
+                <small>
+                    Por Salim Virji (http://www.flickr.com/photos/salim/402618628/)
+                </small>
+            </figcaption>
+        </figure>
+        <ul>
+            <li>Um</li>
+            <li>Dois</li>
+            <li>Três</li>
+            <li>Quatro</li>
+        </ul>
+        <div class="blue">
+            Um gradiente azul clássico, utilizando 2 tons similares.
+        </div>
+        <div class="reverse-blue">
+            Uma versão inversa do gradiente azul.
+        </div>
+        <div class="omg-pink">
+            Combinando "top" e "right" para a direção.
+        </div>
+        <div class="stops">
+            Utilizando posições específicas para as cores.
+        </div>
+        <div class="sol">
+            Raios do sol.
+        </div>
+    </body>
+</html>
