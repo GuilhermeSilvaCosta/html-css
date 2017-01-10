@@ -1,0 +1,45 @@
+body{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Geneva, Tahoma, sans-serif;
+}
+p *{
+    vertical-align: top;
+}
+label{    
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 90px;
+}
+input, textarea{
+    display: inline-block;
+    width: 200px;
+    border: 1px;
+    box-shadow: inset 2px 2px 2px #aaa;
+    font-size: 0.9em;
+    padding: 2px 5px;
+}
+textarea{
+    height: 100px;
+}
+.hint{
+    opacity: 0;
+    background-color: #fffbe4;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    font-size: 0.8em;        
+    padding: 3px;
+    transition: all 0.5s;
+}
+input:focus + .hint, textarea:focus + .hint{
+    margin-left: 20px;
+    opacity: 1;    
+}
+.error{
+    color: red;
+    display: block;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 5px 0 0 90px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+    <head>
+        <meta charset="UTF-8">
+        <title>Placeholder</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery.min.js"></script>
+    </head>
+    <body>
+        <form action="" method="post">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" placeholder="Usuário">
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Senha">
+            <button>Entrar no site</button>
+        </form>
+    </body>
+    <script>
+        jQuery(function($){
+            function supportsPlaceholder(){
+                return 'placeholder' in document.createElement('input') &&
+                       'placeholder' in document.createElement('textarea');
+            }
+            if(!supportsPlaceholder()){
+                $('html').addClass('no-placeholder');
+            }
+        });
+    </script>
+</html>
